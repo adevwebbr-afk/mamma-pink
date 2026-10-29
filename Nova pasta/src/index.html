@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê de Beleza & Estética Feminina | Mamma Rosa</title>
+    
+    <!-- Google Fonts & Lucide Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- GEOMETRIAS LINHARES FINAS -->
+    <svg class="geo-shape geo-triangle-1" viewBox="0 0 100 100">
+        <polygon points="50,5 95,95 5,95" fill="none" stroke="rgba(212, 175, 55, 0.4)" stroke-width="1.2"/>
+    </svg>
+    <svg class="geo-shape geo-triangle-2" viewBox="0 0 100 100">
+        <polygon points="50,5 95,95 5,95" fill="none" stroke="rgba(200, 138, 138, 0.35)" stroke-width="1.2"/>
+    </svg>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Mamma <span>Rosa</span></a>
+            <ul class="nav-links">
+                <li><a href="#servicos">Especialidades</a></li>
+                <li><a href="#carrossel">Galeria</a></li>
+                <li><a href="#transformacao">Resultados</a></li>
+            </ul>
+            <a href="#agendar" class="btn btn-outline">Agendar Horário</a>
+        </div>
+    </header>
+
+    <!-- HERO CENTRALIZADO COM FOTO DE SALÃO OPACA AO FUNDO -->
+    <section class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container">
+            <span class="hero-tag">Estética Feminina Integral</span>
+            <h1>Realce sua beleza natural com o cuidado que você merece.</h1>
+            <p>Atendimento exclusivo em um ambiente acolhedor. Unhas, cabelos, sobrancelhas e estética com técnicas de alta precisão.</p>
+            <a href="#agendar" class="btn btn-primary"><i data-lucide="sparkles"></i> Solicitar Atendimento</a>
+
+            <!-- GALERIA EDITORIAL ORGANICA (UNHAS, CABELO, SOBRANCELHA) -->
+            <div class="hero-gallery">
+                <div class="gallery-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Nail Art e Manicure Delicada">
+                </div>
+                <div class="gallery-img-wrapper center">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" alt="Cabelo e Penteado Feminino">
+                </div>
+                <div class="gallery-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Design de Sobrancelhas e Cílios">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS DO SALÃO COMPLETO -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Espaço de Estética Completo</h2>
+                <p style="color: var(--text-muted);">Cuidados especializados para cada detalhe do seu visual.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                    <h3>Manicure & Unhas</h3>
+                    <p>Alongamento em gel, blindagem e nail art delicada com acabamento impecável.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="scissors"></i></div>
+                    <h3>Cabelo & Tratamentos</h3>
+                    <p>Cortes modernos, cronograma capilar, mechas e hidratações profundas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="eye"></i></div>
+                    <h3>Sobrancelha & Cílios</h3>
+                    <p>Design personalizado, micropigmentação suave e extensão de cílios leve.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="heart"></i></div>
+                    <h3>Spa dos Pés</h3>
+                    <p>Esfoliação profunda, hidratação aveludada e massagem relaxante para pés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARROSSEL INTERATIVO (UNHAS, CABELO, PÉS E SOBRANCELHAS) -->
+    <section id="carrossel" class="carousel-sec">
+        <div class="container">
+            <div class="section-header">
+                <h2>Inspirações do Nosso Ateliê</h2>
+                <p style="color: var(--text-muted);">Navegue por nossas criações e procedimentos mais solicitados.</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Slide 1: Unhas -->
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80" class="slide-img" alt="Unhas em Gel">
+                        <div class="slide-content">
+                            <span class="slide-tag">Nails Art</span>
+                            <h3>Alongamento em Gel Suave</h3>
+                            <p>Técnica de alta durabilidade com tonalidades nude e aplicação de brilho delicado.</p>
+                            <a href="#agendar" class="btn btn-outline">Agendar Unhas</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2: Cabelos -->
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" class="slide-img" alt="Tratamento Capilar">
+                        <div class="slide-content">
+                            <span class="slide-tag">Hair Care</span>
+                            <h3>Tratamento de Nutrição Aveludada</h3>
+                            <p>Devolve o brilho, a maciez e o movimento natural dos fios com produtos seletos.</p>
+                            <a href="#agendar" class="btn btn-outline">Agendar Cabelo</a>
+                        </div>
+                    </div>
+                    <!-- Slide 3: Sobrancelha -->
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" class="slide-img" alt="Design de Sobrancelha">
+                        <div class="slide-content">
+                            <span class="slide-tag">Brows & Lashes</span>
+                            <h3>Design de Sobrancelhas Guiado</h3>
+                            <p>Mapeamento facial para harmonizar a moldura do seu olhar com extrema leveza.</p>
+                            <a href="#agendar" class="btn btn-outline">Agendar Olhar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-nav">
+                    <button class="carousel-btn" id="prevBtn"><i data-lucide="chevron-left"></i></button>
+                    <button class="carousel-btn" id="nextBtn"><i data-lucide="chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANTES E DEPOIS INTERATIVO -->
+    <section id="transformacao" class="visualizer">
+        <div class="container">
+            <div class="section-header">
+                <h2>Resultados Reais</h2>
+                <p style="color: var(--text-muted);">Arraste para comparar o efeito do nosso atendimento.</p>
+            </div>
+
+            <div class="ba-wrapper">
+                <div class="ba-img ba-after"></div>
+                <div class="ba-img ba-before" id="beforeImg"></div>
+                <input type="range" min="0" max="100" value="50" class="ba-slider" id="baSlider">
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO EXCLUSIVO NO FINAL DA PÁGINA (LINK ÂNCORA: #agendar) -->
+    <section id="agendar" class="booking-section">
+        <div class="container">
+            <div class="booking-card">
+                <h2>Reserve Seu Momento</h2>
+                <p>Preencha os dados abaixo e selecione os serviços desejados para atendimento via WhatsApp.</p>
+
+                <form id="leadForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Seu Nome</label>
+                            <input type="text" id="nome" class="form-control" placeholder="Como podemos te chamar?" required>
+                        </div>
+                        <div class="form-group">
+                            <label>WhatsApp</label>
+                            <input type="tel" id="whatsapp" class="form-control" placeholder="(00) 00000-0000" required>
+                        </div>
+                        <div class="form-group full">
+                            <label>Serviço Principal</label>
+                            <select id="interesse" class="form-control">
+                                <option>Manicure & Unhas em Gel</option>
+                                <option>Cabelo & Hidratação Profunda</option>
+                                <option>Design de Sobrancelhas & Cílios</option>
+                                <option>Spa dos Pés & Pedicure</option>
+                                <option>Pacote Completo de Beleza</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;"><i data-lucide="send"></i> Agendar Atendimento no WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mamma Rosa - Ateliê de Beleza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
